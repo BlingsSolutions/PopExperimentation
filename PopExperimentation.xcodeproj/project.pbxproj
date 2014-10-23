@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5C5BC6B719F69CFA00895D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BC6B619F69CFA00895D3B /* AppDelegate.swift */; };
-		5C5BC6B919F69CFA00895D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BC6B819F69CFA00895D3B /* ViewController.swift */; };
 		5C5BC6BC19F69CFA00895D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BC6BA19F69CFA00895D3B /* Main.storyboard */; };
 		5C5BC6BE19F69CFA00895D3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BC6BD19F69CFA00895D3B /* Images.xcassets */; };
 		5C5BC6C119F69CFA00895D3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BC6BF19F69CFA00895D3B /* LaunchScreen.xib */; };
 		5C5BC6CD19F69CFA00895D3B /* PopExperimentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BC6CC19F69CFA00895D3B /* PopExperimentationTests.swift */; };
+		5CA3AFA419F8020900382012 /* AnimationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */; };
+		5CA3AFA619F8094600382012 /* ButtonAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */; };
+		5CA3AFA819F809A700382012 /* ButtonAnimationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */; };
+		8023E4E3AB2F215755F94DB9 /* libPods-PopExperimentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06288640BD6708E65B3530A /* libPods-PopExperimentationTests.a */; };
+		DEBB8A71BBE2DB255EEE5FC9 /* libPods-PopExperimentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097E80774F076027E91164DB /* libPods-PopExperimentation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097E80774F076027E91164DB /* libPods-PopExperimentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PopExperimentation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BC6B119F69CF900895D3B /* PopExperimentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopExperimentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BC6B519F69CFA00895D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C5BC6B619F69CFA00895D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C5BC6B819F69CFA00895D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C5BC6BB19F69CFA00895D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C5BC6BD19F69CFA00895D3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C5BC6C019F69CFA00895D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5C5BC6C619F69CFA00895D3B /* PopExperimentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopExperimentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5BC6CB19F69CFA00895D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C5BC6CC19F69CFA00895D3B /* PopExperimentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopExperimentationTests.swift; sourceTree = "<group>"; };
+		5C5BC6D619F6A03700895D3B /* PopExperimentation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PopExperimentation-Bridging-Header.h"; sourceTree = "<group>"; };
+		5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsTableViewController.swift; sourceTree = "<group>"; };
+		5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimationViewController.swift; sourceTree = "<group>"; };
+		5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimationViewControllerTests.swift; sourceTree = "<group>"; };
+		B06B3D48B33E4BA2E9657325 /* Pods-PopExperimentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.release.xcconfig"; sourceTree = "<group>"; };
+		D19F04736AA68EA8CC57AFB2 /* Pods-PopExperimentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D3016F6625E41ADB5E40F2 /* Pods-PopExperimentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentation/Pods-PopExperimentation.debug.xcconfig"; sourceTree = "<group>"; };
+		DFBC3A81CF231286066D950A /* Pods-PopExperimentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentation/Pods-PopExperimentation.release.xcconfig"; sourceTree = "<group>"; };
+		E06288640BD6708E65B3530A /* libPods-PopExperimentationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PopExperimentationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBB8A71BBE2DB255EEE5FC9 /* libPods-PopExperimentation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +64,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8023E4E3AB2F215755F94DB9 /* libPods-PopExperimentationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41C84466A57808FA9A037B1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5D3016F6625E41ADB5E40F2 /* Pods-PopExperimentation.debug.xcconfig */,
+				DFBC3A81CF231286066D950A /* Pods-PopExperimentation.release.xcconfig */,
+				D19F04736AA68EA8CC57AFB2 /* Pods-PopExperimentationTests.debug.xcconfig */,
+				B06B3D48B33E4BA2E9657325 /* Pods-PopExperimentationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C5BC6A819F69CF900895D3B = {
 			isa = PBXGroup;
 			children = (
 				5C5BC6B319F69CF900895D3B /* PopExperimentation */,
 				5C5BC6C919F69CFA00895D3B /* PopExperimentationTests */,
 				5C5BC6B219F69CF900895D3B /* Products */,
+				41C84466A57808FA9A037B1F /* Pods */,
+				E3A925FDD7D606138220B2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				5C5BC6B619F69CFA00895D3B /* AppDelegate.swift */,
-				5C5BC6B819F69CFA00895D3B /* ViewController.swift */,
+				5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */,
+				5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */,
 				5C5BC6BA19F69CFA00895D3B /* Main.storyboard */,
 				5C5BC6BD19F69CFA00895D3B /* Images.xcassets */,
 				5C5BC6BF19F69CFA00895D3B /* LaunchScreen.xib */,
+				5C5BC6D619F6A03700895D3B /* PopExperimentation-Bridging-Header.h */,
 				5C5BC6B419F69CF900895D3B /* Supporting Files */,
 			);
 			path = PopExperimentation;
@@ -99,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				5C5BC6CC19F69CFA00895D3B /* PopExperimentationTests.swift */,
+				5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */,
 				5C5BC6CA19F69CFA00895D3B /* Supporting Files */,
 			);
 			path = PopExperimentationTests;
@@ -112,6 +143,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E3A925FDD7D606138220B2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				097E80774F076027E91164DB /* libPods-PopExperimentation.a */,
+				E06288640BD6708E65B3530A /* libPods-PopExperimentationTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C5BC6D019F69CFA00895D3B /* Build configuration list for PBXNativeTarget "PopExperimentation" */;
 			buildPhases = (
+				2B2379BD9CC764FB39746F6C /* Check Pods Manifest.lock */,
 				5C5BC6AD19F69CF900895D3B /* Sources */,
 				5C5BC6AE19F69CF900895D3B /* Frameworks */,
 				5C5BC6AF19F69CF900895D3B /* Resources */,
+				0167205838F23859131BB865 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C5BC6D319F69CFA00895D3B /* Build configuration list for PBXNativeTarget "PopExperimentationTests" */;
 			buildPhases = (
+				4A11716AA531067D1AB994B6 /* Check Pods Manifest.lock */,
 				5C5BC6C219F69CFA00895D3B /* Sources */,
 				5C5BC6C319F69CFA00895D3B /* Frameworks */,
 				5C5BC6C419F69CFA00895D3B /* Resources */,
+				4AA4699797FB9DED825A25AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +251,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0167205838F23859131BB865 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopExperimentation/Pods-PopExperimentation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B2379BD9CC764FB39746F6C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A11716AA531067D1AB994B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA4699797FB9DED825A25AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C5BC6AD19F69CF900895D3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5BC6B919F69CFA00895D3B /* ViewController.swift in Sources */,
+				5CA3AFA419F8020900382012 /* AnimationsTableViewController.swift in Sources */,
 				5C5BC6B719F69CFA00895D3B /* AppDelegate.swift in Sources */,
+				5CA3AFA619F8094600382012 /* ButtonAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C5BC6CD19F69CFA00895D3B /* PopExperimentationTests.swift in Sources */,
+				5CA3AFA819F809A700382012 /* ButtonAnimationViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,26 +445,31 @@
 		};
 		5C5BC6D119F69CFA00895D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D3016F6625E41ADB5E40F2 /* Pods-PopExperimentation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopExperimentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		5C5BC6D219F69CFA00895D3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBC3A81CF231286066D950A /* Pods-PopExperimentation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopExperimentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		5C5BC6D419F69CFA00895D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19F04736AA68EA8CC57AFB2 /* Pods-PopExperimentationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -369,12 +483,14 @@
 				INFOPLIST_FILE = PopExperimentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopExperimentation.app/PopExperimentation";
 			};
 			name = Debug;
 		};
 		5C5BC6D519F69CFA00895D3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06B3D48B33E4BA2E9657325 /* Pods-PopExperimentationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +500,7 @@
 				INFOPLIST_FILE = PopExperimentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopExperimentation.app/PopExperimentation";
 			};
 			name = Release;
@@ -407,6 +524,7 @@
 				5C5BC6D219F69CFA00895D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C5BC6D319F69CFA00895D3B /* Build configuration list for PBXNativeTarget "PopExperimentationTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +533,7 @@
 				5C5BC6D519F69CFA00895D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
