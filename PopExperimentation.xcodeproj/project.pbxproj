@@ -15,6 +15,8 @@
 		5CA3AFA419F8020900382012 /* AnimationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */; };
 		5CA3AFA619F8094600382012 /* ButtonAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */; };
 		5CA3AFA819F809A700382012 /* ButtonAnimationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */; };
+		5CF13AA119F8FDC000B1EBA2 /* DecayAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF13AA019F8FDC000B1EBA2 /* DecayAnimationViewController.swift */; };
+		5CF13AA419F8FDEB00B1EBA2 /* DecayAnimationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF13AA319F8FDEB00B1EBA2 /* DecayAnimationViewControllerTests.swift */; };
 		8023E4E3AB2F215755F94DB9 /* libPods-PopExperimentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06288640BD6708E65B3530A /* libPods-PopExperimentationTests.a */; };
 		DEBB8A71BBE2DB255EEE5FC9 /* libPods-PopExperimentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097E80774F076027E91164DB /* libPods-PopExperimentation.a */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsTableViewController.swift; sourceTree = "<group>"; };
 		5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimationViewController.swift; sourceTree = "<group>"; };
 		5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimationViewControllerTests.swift; sourceTree = "<group>"; };
+		5CF13AA019F8FDC000B1EBA2 /* DecayAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecayAnimationViewController.swift; sourceTree = "<group>"; };
+		5CF13AA319F8FDEB00B1EBA2 /* DecayAnimationViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecayAnimationViewControllerTests.swift; sourceTree = "<group>"; };
 		B06B3D48B33E4BA2E9657325 /* Pods-PopExperimentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		D19F04736AA68EA8CC57AFB2 /* Pods-PopExperimentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D3016F6625E41ADB5E40F2 /* Pods-PopExperimentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentation/Pods-PopExperimentation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				5C5BC6B619F69CFA00895D3B /* AppDelegate.swift */,
 				5CA3AFA319F8020900382012 /* AnimationsTableViewController.swift */,
 				5CA3AFA519F8094600382012 /* ButtonAnimationViewController.swift */,
+				5CF13AA019F8FDC000B1EBA2 /* DecayAnimationViewController.swift */,
 				5C5BC6BA19F69CFA00895D3B /* Main.storyboard */,
 				5C5BC6BD19F69CFA00895D3B /* Images.xcassets */,
 				5C5BC6BF19F69CFA00895D3B /* LaunchScreen.xib */,
@@ -130,6 +135,7 @@
 			children = (
 				5C5BC6CC19F69CFA00895D3B /* PopExperimentationTests.swift */,
 				5CA3AFA719F809A700382012 /* ButtonAnimationViewControllerTests.swift */,
+				5CF13AA319F8FDEB00B1EBA2 /* DecayAnimationViewControllerTests.swift */,
 				5C5BC6CA19F69CFA00895D3B /* Supporting Files */,
 			);
 			path = PopExperimentationTests;
@@ -321,6 +327,7 @@
 			files = (
 				5CA3AFA419F8020900382012 /* AnimationsTableViewController.swift in Sources */,
 				5C5BC6B719F69CFA00895D3B /* AppDelegate.swift in Sources */,
+				5CF13AA119F8FDC000B1EBA2 /* DecayAnimationViewController.swift in Sources */,
 				5CA3AFA619F8094600382012 /* ButtonAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +338,7 @@
 			files = (
 				5C5BC6CD19F69CFA00895D3B /* PopExperimentationTests.swift in Sources */,
 				5CA3AFA819F809A700382012 /* ButtonAnimationViewControllerTests.swift in Sources */,
+				5CF13AA419F8FDEB00B1EBA2 /* DecayAnimationViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

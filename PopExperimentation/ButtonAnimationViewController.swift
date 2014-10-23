@@ -23,6 +23,12 @@ class ButtonAnimationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.button.layer.pop_removeAllAnimations()
+    }
+    
     @IBAction func animateScaleToFatWhenTouchDown(sender: AnyObject) {
         let scaleAnimation: POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
         scaleAnimation.toValue = NSValue(CGSize: CGSizeMake(CGFloat(1.05), CGFloat(1.05)))

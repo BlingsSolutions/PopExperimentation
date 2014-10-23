@@ -10,7 +10,7 @@ import UIKit
 
 class AnimationsTableViewController: UITableViewController {
 
-    let animationNames: [String] = ["Button Animation"]
+    let animationNames: [String] = ["Button Animation", "Decay Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class AnimationsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 1
+        return self.animationNames.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -44,7 +44,15 @@ class AnimationsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("ButtonAnimationSegue", sender: nil)
+        switch indexPath.row {
+        case 0:
+            self.performSegueWithIdentifier("ButtonAnimationSegue", sender: nil)
+        case 1:
+            self.performSegueWithIdentifier("DecayAnimationSegue", sender: nil)
+        default:
+            break
+        }
+        
     }
     
 }

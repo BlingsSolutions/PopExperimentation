@@ -36,11 +36,50 @@
                     <navigationItem key="navigationItem" id="JV0-8Q-lms"/>
                     <connections>
                         <segue destination="2qa-rH-Vz9" kind="show" identifier="ButtonAnimationSegue" id="hz3-SB-lxQ"/>
+                        <segue destination="0FS-Tx-enO" kind="show" identifier="DecayAnimationSegue" id="leV-ol-beH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcS-MV-XDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1310" y="247"/>
+        </scene>
+        <!--Decay Animation View Controller-->
+        <scene sceneID="yut-n2-dua">
+            <objects>
+                <viewController storyboardIdentifier="yAnimationViewController" id="0FS-Tx-enO" customClass="DecayAnimationViewController" customModule="PopExperimentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="irg-ru-QBt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ewr-4B-bVT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qb9-lK-Mv6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abn-xq-W8e" customClass="UIControl">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.55501592089999996" blue="0.07607606737" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5Dr-aD-pTQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="E2F-fW-Vo1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="removeAnimationsWhenTouchDown:" destination="0FS-Tx-enO" eventType="touchDown" id="HeK-P9-HWK"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="abn-xq-W8e" secondAttribute="centerX" id="0YG-oh-7Is"/>
+                            <constraint firstAttribute="centerY" secondItem="abn-xq-W8e" secondAttribute="centerY" id="ZVX-Qi-FH9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewToAnimate" destination="abn-xq-W8e" id="y32-IM-JKX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVD-xn-wAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1974" y="943"/>
         </scene>
         <!--Button Animation View Controller-->
         <scene sceneID="REj-Ki-wzP">
