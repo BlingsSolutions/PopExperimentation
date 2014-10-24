@@ -13,23 +13,41 @@
 
 @interface ButtonAnimationViewControllerTests : XCTestCase
 
+@property (strong, nonatomic) UIStoryboard *mainStoryboard;
+@property (strong, nonatomic) ButtonAnimationViewController *sut;
+
 @end
 
 @implementation ButtonAnimationViewControllerTests
 
+- (void)setUp {
+    self.mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    XCTAssertNotNil(self.mainStoryboard);
+    
+    self.sut = [self.mainStoryboard instantiateViewControllerWithIdentifier:@"ButtonAnimationViewController"];
+    XCTAssertNotNil(self.sut);
+    
+    [self.sut loadView];
+}
+
 - (void)testButtonShouldBeConnected {
-    // given
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    XCTAssertNotNil(mainStoryboard);
     
-    ButtonAnimationViewController *sut = [mainStoryboard instantiateViewControllerWithIdentifier:@"ButtonAnimationViewController"];
-    XCTAssertNotNil(sut);
-    
-    // when
-    [sut loadView];
-    
-    // then
-    XCTAssertNotNil(sut.button);
+    XCTAssertNotNil(self.sut.button);
+}
+
+- (void)testButtonActionAnimateScaleToFatWhenTouchDownShouldBeConnected {
+    NSArray *actions = [self.sut.button actionsForTarget:self.sut forControlEvent:UIControlEventTouchDown];
+    XCTAssert([actions containsObject:@"animateScaleToFatWhenTouchDown:"]);
+}
+
+- (void)testButtonActionAnimateScaleWithSpringToDefaultWhenTouchUpInside {
+    NSArray *actions = [self.sut.button actionsForTarget:self.sut forControlEvent:UIControlEventTouchUpInside];
+    XCTAssert([actions containsObject:@"animateScaleWithSpringToDefaultWhenTouchUpInside:"]);
+}
+
+- (void)testButtonActionAnimateShakeAfterDelayWhenTouchUpInside {
+    NSArray *actions = [self.sut.button actionsForTarget:self.sut forControlEvent:UIControlEventTouchUpInside];
+    XCTAssert([actions containsObject:@"animateShakeAfterDelayWhenTouchUpInside:"]);
 }
 
 @end

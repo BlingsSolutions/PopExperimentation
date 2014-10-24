@@ -123,9 +123,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="animateScaleToFatWhenTouchDown:" destination="2qa-rH-Vz9" eventType="touchDown" id="15Q-Jb-jVP"/>
-                                    <action selector="animateScaleWithSpringToDefaultWhenTouchUpInside:" destination="2qa-rH-Vz9" eventType="touchUpInside" id="DNf-nM-lvn"/>
-                                    <action selector="animateShakeAfterDelayWhenTouchUpInside:" destination="2qa-rH-Vz9" eventType="touchUpInside" id="fa4-sL-yeX"/>
+                                    <action selector="animateScaleToFatWhenTouchDown:" destination="2qa-rH-Vz9" eventType="touchDown" id="BcL-kL-FjQ"/>
+                                    <action selector="animateScaleWithSpringToDefaultWhenTouchUpInside:" destination="2qa-rH-Vz9" eventType="touchUpInside" id="0Z6-V2-Ytd"/>
+                                    <action selector="animateShakeAfterDelayWhenTouchUpInside:" destination="2qa-rH-Vz9" eventType="touchUpInside" id="Qyx-8c-QoD"/>
                                 </connections>
                             </button>
                         </subviews>
