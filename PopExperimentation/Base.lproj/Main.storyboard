@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OdO-9B-Tz3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OdO-9B-Tz3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Animations Table View Controller-->
@@ -37,6 +37,7 @@
                     <connections>
                         <segue destination="2qa-rH-Vz9" kind="show" identifier="ButtonAnimationSegue" id="hz3-SB-lxQ"/>
                         <segue destination="0FS-Tx-enO" kind="show" identifier="DecayAnimationSegue" id="leV-ol-beH"/>
+                        <segue destination="tSc-ln-M7k" kind="show" identifier="CircleAnimationSegue" id="cn0-Tk-wDs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcS-MV-XDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,10 +82,28 @@
             </objects>
             <point key="canvasLocation" x="1974" y="943"/>
         </scene>
+        <!--Circle Animation View Controller-->
+        <scene sceneID="BoR-Eo-yRm">
+            <objects>
+                <viewController storyboardIdentifier="CircleAnimationViewController" id="tSc-ln-M7k" customClass="CircleAnimationViewController" customModule="PopExperimentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CKG-Ho-h8P"/>
+                        <viewControllerLayoutGuide type="bottom" id="M04-fR-eqg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Z0-7c-BAm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHg-dT-aoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="1686"/>
+        </scene>
         <!--Button Animation View Controller-->
         <scene sceneID="REj-Ki-wzP">
             <objects>
-                <viewController storyboardIdentifier="ButtonAnimationViewController" id="2qa-rH-Vz9" customClass="ButtonAnimationViewController" customModule="PopExperimentation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2qa-rH-Vz9" customClass="ButtonAnimationViewController" customModule="PopExperimentation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LWu-MM-SB3"/>
                         <viewControllerLayoutGuide type="bottom" id="3bJ-ms-J09"/>
@@ -117,7 +136,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="heq-JH-d70" id="cwI-h1-WYY"/>
+                        <outlet property="button" destination="heq-JH-d70" id="suL-Pa-CPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbG-HO-Nzw" userLabel="First Responder" sceneMemberID="firstResponder"/>

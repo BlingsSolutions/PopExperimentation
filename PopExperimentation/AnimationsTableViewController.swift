@@ -10,7 +10,7 @@ import UIKit
 
 class AnimationsTableViewController: UITableViewController {
 
-    let animationNames: [String] = ["Button Animation", "Decay Animation"]
+    let animationNames: [String] = ["Button Animation", "Decay Animation", "Circle Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class AnimationsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("AnimationCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = self.animationNames[indexPath.row]
+        cell.textLabel.text = self.animationNames[indexPath.row]
 
         return cell
     }
@@ -49,6 +49,8 @@ class AnimationsTableViewController: UITableViewController {
             self.performSegueWithIdentifier("ButtonAnimationSegue", sender: nil)
         case 1:
             self.performSegueWithIdentifier("DecayAnimationSegue", sender: nil)
+        case 2:
+            self.performSegueWithIdentifier("CircleAnimationSegue", sender: nil)
         default:
             break
         }
