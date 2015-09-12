@@ -20,6 +20,7 @@
 		5CD6CC1419F939F500ACD07E /* CircleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6CBE019F9332E00ACD07E /* CircleAnimationViewController.swift */; };
 		5CF13AA119F8FDC000B1EBA2 /* DecayAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF13AA019F8FDC000B1EBA2 /* DecayAnimationViewController.swift */; };
 		5CFED28F19FA546500DE2EF4 /* ButtonAnimationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFED28E19FA546500DE2EF4 /* ButtonAnimationViewControllerTests.m */; };
+		5CFED29219FA902200DE2EF4 /* DecayAnimationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFED29119FA902200DE2EF4 /* DecayAnimationViewControllerTests.m */; };
 		8023E4E3AB2F215755F94DB9 /* libPods-PopExperimentationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06288640BD6708E65B3530A /* libPods-PopExperimentationTests.a */; };
 		DEBB8A71BBE2DB255EEE5FC9 /* libPods-PopExperimentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097E80774F076027E91164DB /* libPods-PopExperimentation.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		5CD6CBE019F9332E00ACD07E /* CircleAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAnimationViewController.swift; sourceTree = "<group>"; };
 		5CF13AA019F8FDC000B1EBA2 /* DecayAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecayAnimationViewController.swift; sourceTree = "<group>"; };
 		5CFED28E19FA546500DE2EF4 /* ButtonAnimationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonAnimationViewControllerTests.m; sourceTree = "<group>"; };
+		5CFED29119FA902200DE2EF4 /* DecayAnimationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecayAnimationViewControllerTests.m; sourceTree = "<group>"; };
 		B06B3D48B33E4BA2E9657325 /* Pods-PopExperimentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		D19F04736AA68EA8CC57AFB2 /* Pods-PopExperimentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentationTests/Pods-PopExperimentationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D3016F6625E41ADB5E40F2 /* Pods-PopExperimentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopExperimentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopExperimentation/Pods-PopExperimentation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				5C5BC6CC19F69CFA00895D3B /* PopExperimentationTests.swift */,
 				5CFED28E19FA546500DE2EF4 /* ButtonAnimationViewControllerTests.m */,
+				5CFED29119FA902200DE2EF4 /* DecayAnimationViewControllerTests.m */,
 				5C5BC6CA19F69CFA00895D3B /* Supporting Files */,
 			);
 			path = PopExperimentationTests;
@@ -209,7 +212,8 @@
 		5C5BC6A919F69CF900895D3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = HoodBrains;
 				TargetAttributes = {
 					5C5BC6B019F69CF900895D3B = {
@@ -340,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFED29219FA902200DE2EF4 /* DecayAnimationViewControllerTests.m in Sources */,
 				5CD6CC1319F939F500ACD07E /* ButtonAnimationViewController.swift in Sources */,
 				5CFED28F19FA546500DE2EF4 /* ButtonAnimationViewControllerTests.m in Sources */,
 				5CD6CC1419F939F500ACD07E /* CircleAnimationViewController.swift in Sources */,
@@ -398,6 +403,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -464,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopExperimentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoodbrains.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 			};
@@ -476,6 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopExperimentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoodbrains.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 			};
@@ -496,6 +504,7 @@
 				);
 				INFOPLIST_FILE = PopExperimentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoodbrains.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopExperimentation.app/PopExperimentation";
@@ -513,6 +522,7 @@
 				);
 				INFOPLIST_FILE = PopExperimentationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoodbrains.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PopExperimentation/PopExperimentation-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopExperimentation.app/PopExperimentation";

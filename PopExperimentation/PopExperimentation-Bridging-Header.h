@@ -9,7 +9,7 @@
 #ifndef PopExperimentation_PopExperimentation_Bridging_Header_h
 #define PopExperimentation_PopExperimentation_Bridging_Header_h
 
+#import <POP/POP.h>
 
 #endif
 
-#import <POP/POP.h>

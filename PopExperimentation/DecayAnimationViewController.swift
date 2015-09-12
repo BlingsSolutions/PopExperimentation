@@ -16,18 +16,19 @@ class DecayAnimationViewController: UIViewController, POPAnimationDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        viewToAnimate.layer.cornerRadius = viewToAnimate.frame.size.width / 2
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.setupViewToAnimate()
+        setupViewToAnimate()
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
-        self.viewToAnimate.layer.pop_removeAllAnimations()
+        viewToAnimate.layer.pop_removeAllAnimations()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,18 +40,18 @@ class DecayAnimationViewController: UIViewController, POPAnimationDelegate {
     func setupViewToAnimate() {
         let panRecognizer: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: "handlePan:")
         
-        self.viewToAnimate.layer.cornerRadius = self.viewToAnimate.frame.size.width / 2
-        self.viewToAnimate.addGestureRecognizer(panRecognizer)
+        
+        viewToAnimate.addGestureRecognizer(panRecognizer)
     }
     
     func handlePan(recognizer: UIPanGestureRecognizer) {
-        let translation: CGPoint = recognizer.translationInView(self.view)
+        let translation: CGPoint = recognizer.translationInView(view)
         recognizer.view?.center = CGPointMake(recognizer.view!.center.x + translation.x,
             recognizer.view!.center.y + translation.y)
-        recognizer.setTranslation(CGPointMake(0, 0), inView: self.view)
+        recognizer.setTranslation(CGPointMake(0, 0), inView: view)
         
         if (recognizer.state == UIGestureRecognizerState.Ended) {
-            let velocity: CGPoint = recognizer.velocityInView(self.view)
+            let velocity: CGPoint = recognizer.velocityInView(view)
             
             let positionDecayAnimation: POPDecayAnimation = POPDecayAnimation(propertyNamed: kPOPLayerPosition)
             positionDecayAnimation.velocity = NSValue(CGPoint: velocity)
@@ -66,15 +67,15 @@ class DecayAnimationViewController: UIViewController, POPAnimationDelegate {
     // MARK: - POPAnimationDelegate
     
     func pop_animationDidApply(anim: POPAnimation!) {
-        let isViewToAnimateOutsideOfSuperView: Bool = !CGRectContainsRect(self.view.frame, self.viewToAnimate.frame)
+        let isViewToAnimateOutsideOfSuperView: Bool = !CGRectContainsRect(view.frame, viewToAnimate.frame)
         
         if (isViewToAnimateOutsideOfSuperView) {
-            self.viewToAnimate.layer.pop_removeAllAnimations()
-            let decayAnim: POPDecayAnimation = anim as POPDecayAnimation
-            let currentVelocity: CGPoint = decayAnim.velocity!.CGPointValue()
-            let velocity: CGPoint = CGPointMake(-currentVelocity.x, -currentVelocity.y)
+            viewToAnimate.layer.pop_removeAllAnimations()
+            let decayAnim = anim as! POPDecayAnimation
+            let currentVelocity = decayAnim.velocity!.CGPointValue
+            let velocity = CGPoint(x: -currentVelocity.x, y: -currentVelocity.y)
             decayAnim.velocity = NSValue(CGPoint: velocity)
-            self.viewToAnimate.layer.pop_addAnimation(decayAnim, forKey: "backToCenterPositionAnimation")
+            viewToAnimate.layer.pop_addAnimation(decayAnim, forKey: "backToCenterPositionAnimation")
         }
     }
     

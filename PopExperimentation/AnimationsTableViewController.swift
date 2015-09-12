@@ -31,14 +31,14 @@ class AnimationsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return self.animationNames.count
+        return animationNames.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("AnimationCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel.text = self.animationNames[indexPath.row]
+        cell.textLabel?.text = animationNames[indexPath.row]
 
         return cell
     }
@@ -46,11 +46,11 @@ class AnimationsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
         case 0:
-            self.performSegueWithIdentifier("ButtonAnimationSegue", sender: nil)
+            performSegueWithIdentifier("ButtonAnimationSegue", sender: nil)
         case 1:
-            self.performSegueWithIdentifier("DecayAnimationSegue", sender: nil)
+            performSegueWithIdentifier("DecayAnimationSegue", sender: nil)
         case 2:
-            self.performSegueWithIdentifier("CircleAnimationSegue", sender: nil)
+            performSegueWithIdentifier("CircleAnimationSegue", sender: nil)
         default:
             break
         }

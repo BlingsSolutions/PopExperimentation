@@ -26,7 +26,7 @@ class ButtonAnimationViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
-        self.button.layer.pop_removeAllAnimations()
+        button.layer.pop_removeAllAnimations()
     }
     
     @IBAction func animateScaleToFatWhenTouchDown(sender: AnyObject) {

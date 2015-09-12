@@ -30,8 +30,12 @@
     [self.sut loadView];
 }
 
+- (void)tearDown {
+    self.mainStoryboard = nil;
+    self.sut = nil;
+}
+
 - (void)testButtonShouldBeConnected {
-    
     XCTAssertNotNil(self.sut.button);
 }
 
